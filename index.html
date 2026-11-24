@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0a0a0b">
+<title>OpenCanon — a canon brain for the people</title>
+<meta name="description" content="OpenCanon is a Canon-grade Notion-like system: a personal canon brain anyone can run — an online canonical database with CLI + MCP + JS API surfaces, provider-agnostic, free base forever. AI infrastructure for the People.">
+<meta property="og:title" content="OpenCanon — a canon brain for the people">
+<meta property="og:description" content="OpenCanon is a Canon-grade Notion-like system: a personal canon brain anyone can run — an online canonical database with CLI + MCP + JS API surfaces, provider-agnostic, free base forever. AI infrastructure for the People.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://opencanon.dawnstudio.app/">
+<meta property="og:site_name" content="OpenCanon">
+<meta property="og:image" content="https://opencanon.dawnstudio.app/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="OpenCanon — Dawn Studio founding project">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="OpenCanon — a canon brain for the people">
+<meta name="twitter:description" content="OpenCanon is a Canon-grade Notion-like system: a personal canon brain anyone can run — an online canonical database with CLI + MCP + JS API surfaces, provider-agnostic, free base forever. AI infrastructure for the People.">
+<meta name="twitter:image" content="https://opencanon.dawnstudio.app/og.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<style>
+:root{--bg:#0a0a0b;--panel:#131315;--panel2:#17171a;--line:#26262b;--text:#f5f2ee;--muted:#a8a29b;--accent:#e8590c;--accent-soft:#ff8a3d;--radius:16px;--sans:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","Noto Sans CJK TC",sans-serif;--serif:Georgia,"Times New Roman","Noto Serif TC","Noto Serif CJK TC",serif}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.55}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px;min-width:0}
+a{color:var(--accent-soft)}
+header.utility{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:18px;border-bottom:1px solid var(--line);max-width:720px;margin:0 auto;padding:10px 20px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--text);text-decoration:none;font-weight:700;min-width:0}
+.brand img{border-radius:9px;flex:none}
+.brand span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lang-switch{display:flex;gap:6px;flex:none}
+.lang-switch button{background:var(--panel2);color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font:inherit;font-size:.85rem;cursor:pointer;max-width:100%}
+.lang-switch button[aria-pressed="true"]{color:var(--text);border-color:var(--accent)}
+.hero{padding:56px 0 8px}
+.eyebrow{color:var(--accent-soft);font-size:.85rem;letter-spacing:.14em;text-transform:uppercase;margin:0 0 14px}
+h1{font-family:var(--serif);font-size:clamp(2rem,7vw,3.2rem);line-height:1.12;margin:0 0 18px;overflow-wrap:anywhere}
+.hero p.lede{font-size:clamp(1.02rem,3.4vw,1.25rem);color:var(--text);margin:0;overflow-wrap:anywhere}
+.status{display:inline-block;margin-top:22px;border:1px solid var(--accent);color:var(--accent-soft);border-radius:999px;padding:7px 16px;font-size:.9rem;max-width:100%;overflow-wrap:anywhere}
+section{padding:30px 0 4px}
+h2{font-family:var(--serif);font-size:1.5rem;margin:0 0 14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:20px;min-width:0}
+.card p{margin:0 0 12px;overflow-wrap:anywhere}.card p:last-child{margin-bottom:0}
+.card ol{margin:0;padding-left:22px}.card li{margin-bottom:10px;overflow-wrap:anywhere}
+.goal{font-family:var(--serif);font-size:1.15rem;line-height:1.6}
+footer{border-top:1px solid var(--line);margin-top:48px;padding:26px 20px 40px;max-width:720px;margin-left:auto;margin-right:auto;display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;color:var(--muted);font-size:.92rem}
+footer p{margin:0}
+footer .links{display:flex;gap:16px;flex-wrap:wrap}
+footer a{color:var(--muted);text-decoration:none}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+</style>
+</head>
+<body id="top">
+<header class="utility">
+  <a class="brand" href="#top" aria-label="OpenCanon home">
+    <img src="/icon-192.png" alt="OpenCanon logo" width="40" height="40">
+    <span>OpenCanon</span> <span data-i18n="hall">· Dawn Studio</span>
+  </a>
+  <div class="lang-switch" role="group" aria-label="Language">
+    <button type="button" data-lang="en" aria-pressed="true">EN</button>
+    <button type="button" data-lang="zh" aria-pressed="false">繁中</button>
+  </div>
+</header>
+<main class="wrap">
+  <div class="hero">
+    <p class="eyebrow" data-i18n="eyebrow">A Dawn Studio founding project</p>
+    <h1>OpenCanon</h1>
+    <p class="lede" data-i18n="hero">What we built for ourselves must become infrastructure for everyone — a personal canon brain anyone can run. AI infrastructure for the People: everyone will need it, just like we do.</p>
+    <span class="status" data-i18n="status">Founding — initialized, first release in preparation</span>
+  </div>
+  <section><h2 data-i18n="whatH">What it is</h2><div class="card"><p data-i18n="w0">Build a Canon-grade Notion-like system: a personal canon brain anyone can run — an online canonical database with CLI + MCP + JS API surfaces, provider-agnostic (no single platform holds the kill switch), offline-first, all languages day one.</p><p data-i18n="w1">Core jobs: capture raw → distill → enrich (visible) → merge/dedupe → gate → surfaces (notes/API/MCP) → teach-back.</p><p data-i18n="w2">Its root: the Notion brain — the Canon of the Canon of the Canon, the original database where canon first lived. Apple Notes is the body-close distilled surface of that root, not the root itself; learnings flow back up the same pipe and re-distill into the root.</p><p data-i18n="w3">Family position: OpenVehicle makes facts citable, OpenOracle fills the public face, DawnGlance gives form — OpenCanon is the BRAIN they all read from: the canonical store itself.</p><p data-i18n="w4">Dogfood № 1: Hector's own Notion brain + the Dawn canon. For the People: free base forever (Dawn money model); credits meter volume/API.</p><p data-i18n="w5">Name note: OpenCanon is the working name; formal naming runs through the Name Canon process.</p></div></section>
+  <section><h2 data-i18n="goalH">End Goal</h2><div class="card"><p class="goal" data-i18n="goal">AI infrastructure for the People: a Canon-grade personal canon brain anyone can run — the canonical store every surface reads from, with no single platform holding the kill switch, and a free base forever.</p></div></section>
+  <section><h2 data-i18n="roadH">Roadmap</h2><div class="card"><p data-i18n="roadSoon">Roadmap — founding brief in preparation</p></div></section>
+</main>
+<footer>
+  <p data-i18n="footStudio">Dawn Studio · Independent software.</p>
+  <div class="links">
+    <a href="https://dawnstudio.app/examples">Examples</a>
+    <a href="https://dawnstudio.app/changelog">Changelog</a>
+    <a href="https://dawnstudio.app/blog">Blog</a>
+    <a href="https://dawnstudio.app/canon">Canon</a>
+    <a href="https://dawnstudio.app/privacy.html">Privacy</a>
+    <a href="#top" aria-label="Back to top">↑<span class="sr-only">Back to top</span></a>
+  </div>
+</footer>
+<script>
+const I18N={"hall": {"en": "· Dawn Studio", "zh": "· Dawn Studio"}, "eyebrow": {"en": "A Dawn Studio founding project", "zh": "Dawn Studio 立派項目"}, "status": {"en": "Founding — initialized, first release in preparation", "zh": "創建中 — 已初始化，第一版準備中"}, "whatH": {"en": "What it is", "zh": "呢個係咩"}, "goalH": {"en": "End Goal", "zh": "終極目標"}, "roadH": {"en": "Roadmap", "zh": "路線圖"}, "roadSoon": {"en": "Roadmap — founding brief in preparation", "zh": "路線圖 — 立派文件準備中"}, "footStudio": {"en": "Dawn Studio · Independent software.", "zh": "Dawn Studio · 獨立軟件。"}, "w0": {"en": "Build a Canon-grade Notion-like system: a personal canon brain anyone can run — an online canonical database with CLI + MCP + JS API surfaces, provider-agnostic (no single platform holds the kill switch), offline-first, all languages day one.", "zh": "起一個 Canon 級嘅 Notion 式系統：人人可運行嘅個人正史腦 —— 在線 canonical 資料庫，有 CLI + MCP + JS API 版面、唔綁供應商（冇任何單一平台揸住 kill switch）、offline-first、第一日就全語言。"}, "w1": {"en": "Core jobs: capture raw → distill → enrich (visible) → merge/dedupe → gate → surfaces (notes/API/MCP) → teach-back.", "zh": "核心工作：capture raw → 蒸餾 → enrich（可見）→ 合併／去重 → 把關 → 版面（notes/API/MCP）→ teach-back。"}, "w2": {"en": "Its root: the Notion brain — the Canon of the Canon of the Canon, the original database where canon first lived. Apple Notes is the body-close distilled surface of that root, not the root itself; learnings flow back up the same pipe and re-distill into the root.", "zh": "佢嘅根：Notion 腦 —— Canon of the Canon of the Canon，正史最初居住嘅原始資料庫。Apple Notes 係貼身嘅蒸餾版面，唔係根本身；學到嘅嘢會沿同一條管道流返上去，再蒸餾入根。"}, "w3": {"en": "Family position: OpenVehicle makes facts citable, OpenOracle fills the public face, DawnGlance gives form — OpenCanon is the BRAIN they all read from: the canonical store itself.", "zh": "家族位置：OpenVehicle 令事實可引用、OpenOracle 擔當公開面、DawnGlance 賦予形態 —— OpenCanon 係佢哋全部讀取嘅腦：canonical 儲存本身。"}, "w4": {"en": "Dogfood № 1: Hector's own Notion brain + the Dawn canon. For the People: free base forever (Dawn money model); credits meter volume/API.", "zh": "Dogfood № 1：Hector 自己嘅 Notion 腦 + Dawn 正史。為人民：基礎版永遠免費（Dawn 錢模型）；credits 只計用量／API。"}, "w5": {"en": "Name note: OpenCanon is the working name; formal naming runs through the Name Canon process.", "zh": "命名註：OpenCanon 係工作名；正式命名會行 Name Canon 程序。"}, "hero": {"en": "What we built for ourselves must become infrastructure for everyone — a personal canon brain anyone can run. AI infrastructure for the People: everyone will need it, just like we do.", "zh": "我哋為自己起嘅嘢，要成為人人可用嘅基礎設施 —— 一個任何人都可以行嘅個人正史腦。為人民而設嘅 AI 基礎設施：每個人都會需要，正如我哋需要。"}, "goal": {"en": "AI infrastructure for the People: a Canon-grade personal canon brain anyone can run — the canonical store every surface reads from, with no single platform holding the kill switch, and a free base forever.", "zh": "為人民而設嘅 AI 基礎設施：一個人人可運行嘅 Canon 級個人正史腦 —— 所有版面共同讀取嘅 canonical 儲存，冇單一平台揸住 kill switch，基礎版永遠免費。"}};
+function setLang(l){document.documentElement.lang=l==="zh"?"zh-Hant":"en";
+ document.querySelectorAll("[data-i18n]").forEach(el=>{const k=el.getAttribute("data-i18n");if(I18N[k]&&I18N[k][l])el.textContent=I18N[k][l];});
+ document.querySelectorAll("[data-lang]").forEach(b=>b.setAttribute("aria-pressed",b.getAttribute("data-lang")===l?"true":"false"));}
+document.querySelectorAll("[data-lang]").forEach(b=>b.addEventListener("click",()=>setLang(b.getAttribute("data-lang"))));
+</script>
+</body>
+</html>
